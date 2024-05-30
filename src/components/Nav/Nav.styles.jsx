@@ -8,9 +8,11 @@ export const NavStyles = styled.nav`
     min-width: 100%;    
     height: 60px;  
     background-color: rgba(0, 0, 0, 0.6);     
-    z-index: 99;      
-    position: relative;
- 
+    position: fixed; 
+    top: 0;
+    left: 0; 
+    z-index: 1200;   
+  
     a {  
         margin: 0 auto;  
         font-size: 18px;   
@@ -18,7 +20,7 @@ export const NavStyles = styled.nav`
         color: #fff;
         z-index: 44; 
     }   
-   
+    
     .intro {  
         color: #32CD32;
     } 

@@ -11,4 +11,4 @@ export const NavBar = () => {
             </NavLinksContainer>   
         </NavStyles> 
     )
-} 
+}  

@@ -9,13 +9,13 @@ export const HeaderStyle = styled.header`
   justify-content: center;    
   align-items: center;  
   text-align: center;  
-  z-index: 5;  
+  z-index: 5; 
   
   .header-h1 {    
     max-width: 60%; 
     margin: auto;  
-    padding: 5px;   
-    line-height: 110px;     
+    padding: 5px;     
+    line-height: 110px;      
   }    
    
   &::before {   
@@ -32,8 +32,8 @@ export const HeaderStyle = styled.header`
     z-index: 3;
   }  
 `
-
-export const HeaderTextStyle = styled.div`
-    transform: translateY(-70%);    
+ 
+export const HeaderTextStyle = styled.div` 
+    transform: translateY(-20%);      
     z-index: 96;      
 ` 

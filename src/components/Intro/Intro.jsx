@@ -1,6 +1,15 @@
-import { IntroStyles, IntroStylesContainer, IntroTextStyles } from "./Intro.styles";
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import { IntroStyles, IntroStylesContainer, IntroTextStyles, StartLearningBtnStyles } from "./Intro.styles";
 
 export const Intro = () => {
+    const navigate = useNavigate();
+
+    const goToStartLearningPage = ()=> {
+        navigate("/src/components/LearnJsPage/LearnJsPage.jsx");
+    }
+
+
     return (
         <IntroStylesContainer>
             <IntroStyles> 
@@ -10,8 +19,10 @@ export const Intro = () => {
                     Whether you're a complete beginner or an experienced developer looking to hone your skills, 
                     our platform is designed to cater to all levels of expertise.
                 </IntroTextStyles>
-                <IntroTextStyles>
-                    <h2>What You'll Learn</h2> 
+                <IntroTextStyles> 
+                    <strong className="semi-title">What You'll Learn</strong>  
+                </IntroTextStyles>
+                <IntroTextStyles>                  
                     JavaScript is the backbone of modern web development, 
                     powering everything from simple interactive features to complex web applications.  
                     Here at Learn JavaScript, we offer a comprehensive curriculum that covers all the essential topics, including:
@@ -37,9 +48,10 @@ export const Intro = () => {
                 <IntroTextStyles className="subjects">
                     <strong>Frameworks and Libraries: </strong> Get introduced to popular JavaScript frameworks and libraries like React, Angular, and Vue.js.
                 </IntroTextStyles> 
-            </IntroStyles> 
-        </IntroStylesContainer> 
-        
+                <StartLearningBtnStyles onClick={goToStartLearningPage}>Start Learning JavaScript</StartLearningBtnStyles> 
+            </IntroStyles>    
+        </IntroStylesContainer>   
+          
     ) 
 
 }
