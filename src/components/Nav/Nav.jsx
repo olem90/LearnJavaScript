@@ -7,7 +7,7 @@ export const NavBar = () => {
         <NavStyles>
             <NavLinksContainer>
                 <NavLink className="intro">Intro</NavLink>
-                <NavLink>JavaScript tasks</NavLink>
+                <NavLink className="javascript-tasks">JavaScript tasks</NavLink>
             </NavLinksContainer>   
         </NavStyles> 
     )
