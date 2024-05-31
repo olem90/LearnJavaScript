@@ -12,10 +12,9 @@ export const LearnJsPage = () => {
                     Start Learning JavaScript  
                 </LearnJsPageH1Styles> 
                 <SkillLevels />
-
             </LearnJsPageStyles>  
         </LearnJsPageStylesWrapper> 
         </>
         
     ) 
-}  
+}      

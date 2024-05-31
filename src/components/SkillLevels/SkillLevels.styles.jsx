@@ -9,21 +9,24 @@ export const SkillLevelsContainer = styled.div`
 
     .beginner {    
         &:hover {  
-            box-shadow: 0 0 2px 2px rgba(99, 164, 255, 0.5);   
+            box-shadow: 0 0 2px 2px rgba(99, 164, 255, 0.5);
+            cursor: pointer;
         }     
     } 
 
     .intermediate {
         &:hover {     
             box-shadow: 0 0 2px 2px rgba(50, 205, 50, 0.5);   
+            cursor: pointer;
         }    
     }   
  
     .advanced {
-        &:hover {  
-            box-shadow: 0 0 2px 2px rgba(255, 215, 0, 0.7);   
-        }     
-    }   
+        &:hover {
+            box-shadow: 0 0 2px 2px rgba(255, 215, 0, 0.7);
+            cursor: pointer;
+        }
+    }
 ` 
  
 export const SkillLevelIcons = styled.div` 
