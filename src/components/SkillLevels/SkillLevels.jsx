@@ -9,7 +9,7 @@ export const SkillLevels = () => {
     const navigate = useNavigate();
 
     const goToBeginnerPage = () => {
-        navigate("../Beginner/Beginner.jsx");
+        navigate("/beginner");
     };
 
 
@@ -21,7 +21,7 @@ export const SkillLevels = () => {
 
             <SkillLevelIcons>
                 <img className="intermediate" src={intermediate} /> 
-            </SkillLevelIcons> 
+            </SkillLevelIcons>  
 
             <SkillLevelIcons> 
                 <img className="advanced" src={advanced} />  
