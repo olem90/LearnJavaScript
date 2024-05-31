@@ -1,21 +1,22 @@
 import { SkillLevelsContainer } from "./SkillLevels.styles";
 import advanced from "../../Images/AdvancedLevel.png"; 
 import beginner from "../../Images/BeginnerLevel.png";
+import intermediate from "../../Images/IntermediateLevel.png";
 import { SkillLevelIcons } from "./SkillLevels.styles";
 
 export const SkillLevels = () => { 
     return (
         <SkillLevelsContainer>
-            <SkillLevelIcons>
-                <img src={beginner} />  
+            <SkillLevelIcons >
+                <img className="beginner" src={beginner} />  
             </SkillLevelIcons> 
 
             <SkillLevelIcons>
-                <img src={advanced} /> 
+                <img className="intermediate" src={intermediate} /> 
             </SkillLevelIcons> 
 
-            <SkillLevelIcons>
-                <img src={advanced} /> 
+            <SkillLevelIcons> 
+                <img className="advanced" src={advanced} />  
             </SkillLevelIcons>
         </SkillLevelsContainer>
     )

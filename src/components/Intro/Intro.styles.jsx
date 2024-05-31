@@ -41,14 +41,12 @@ export const StartLearningBtnStyles = styled.button`
     display: flex;
     border-radius: 0; 
     margin-inline: auto;  
-    cursor: pointer; 
+    cursor: pointer;  
     transition: all 0.3s ease;
     box-shadow: 0 0 4px 2px rgba(50, 205, 50, 0.5);    
      
     &:hover { 
-        
         border-color: rgba(50, 205, 50, 0.5); 
- 
     } 
 
     &:focus {  
