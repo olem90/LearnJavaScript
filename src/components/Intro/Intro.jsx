@@ -9,10 +9,9 @@ export const Intro = () => {
         navigate("/src/components/LearnJsPage/LearnJsPage.jsx");
     }
 
-
     return (
         <IntroStylesContainer>
-            <IntroStyles> 
+            <IntroStyles>  
                 <h1>Intro</h1> 
                 <IntroTextStyles> 
                     Welcome to Learn JavaScript, your ultimate destination for mastering the art of web development. 
@@ -51,7 +50,6 @@ export const Intro = () => {
                 <StartLearningBtnStyles onClick={goToStartLearningPage}>Start Learning JavaScript</StartLearningBtnStyles> 
             </IntroStyles>    
         </IntroStylesContainer>   
-          
     ) 
 
 }

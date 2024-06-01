@@ -5,13 +5,12 @@ import intermediate from "../../Images/IntermediateLevel.png";
 import { SkillLevelIcons } from "./SkillLevels.styles";
 import { useNavigate } from "react-router-dom";
 
-export const SkillLevels = () => { 
+export const SkillLevels = ({ basePath }) => { 
     const navigate = useNavigate();
 
     const goToBeginnerPage = () => {
-        navigate("/beginner");
+        navigate(`/${basePath}/beginner`);
     };
-
 
     return (
         <SkillLevelsContainer>
