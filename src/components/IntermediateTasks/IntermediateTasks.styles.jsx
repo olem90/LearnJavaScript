@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const BeginnerTasksWrapper = styled.div`
+export const IntermediateTasksWrapper = styled.div`
     height: 100vh;
     min-width: 100%; 
     box-sizing: border-box;

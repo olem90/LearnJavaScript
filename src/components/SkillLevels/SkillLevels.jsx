@@ -12,6 +12,14 @@ export const SkillLevels = ({ basePath }) => {
         navigate(`/${basePath}/beginner`);
     };
 
+    const goToIntermediatePage = () => {
+        navigate(`/${basePath}/intermediate`);
+    };
+
+    const goToAdvancedPage = () => {
+        navigate(`/${basePath}/advanced`);
+    };
+
     return (
         <SkillLevelsContainer>
             <SkillLevelIcons >
@@ -19,11 +27,11 @@ export const SkillLevels = ({ basePath }) => {
             </SkillLevelIcons> 
 
             <SkillLevelIcons>
-                <img className="intermediate" src={intermediate} /> 
+                <img onClick={goToIntermediatePage} className="intermediate" src={intermediate} /> 
             </SkillLevelIcons>  
 
             <SkillLevelIcons> 
-                <img className="advanced" src={advanced} />  
+                <img onClick={goToAdvancedPage} className="advanced" src={advanced} />  
             </SkillLevelIcons>
         </SkillLevelsContainer>
     )    

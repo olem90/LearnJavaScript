@@ -7,14 +7,15 @@ export const NavBar = () => {
         <NavStyles>
             <NavLinksContainer>
                 <NavLink to="/" className="home">Home</NavLink>
-                <NavLink className="intro">Intro</NavLink>
-                <NavLink to="lessons" className="lessons">Lessons</NavLink>
-                <NavLink className="tasks">Tasks</NavLink>
-                <NavLink className="quizzes">Quizzes</NavLink> 
-                <NavLink className="tests">Tests</NavLink>
-                <NavLink className="resources">Resources</NavLink>
-                <NavLink className="about">About</NavLink>
+                <NavLink className="/intro">Intro</NavLink>
+                <NavLink to="/lessons" className="lessons">Lessons</NavLink>
+                <NavLink to="/tasks" className="tasks">Tasks</NavLink>
+                <NavLink to="/quizzes" className="quizzes">Quizzes</NavLink> 
+                <NavLink to="/tests" className="tests">Tests</NavLink>
+                <NavLink to="/resources" className="resources">Resources</NavLink>
+                <NavLink to="/about" className="about">About</NavLink>
             </NavLinksContainer>   
         </NavStyles> 
     )
 }  
+

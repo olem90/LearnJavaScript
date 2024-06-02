@@ -1,11 +1,15 @@
 import { SkillLevels } from "../SkillLevels/SkillLevels";
-import { SelectTestLevelWrapper } from "./SelectTestLevel.styles";
+import { SelectTestLevelWrapper, SelectTestLevelContainer } from "./SelectTestLevel.styles";
+import { NavBar } from "../Nav/Nav";
 
 export const SelectTestLevel = () => {
     return (
         <SelectTestLevelWrapper>
-            <hi>Select Your Test Level</hi>
-            <SkillLevels basePath="tests" />
+             <NavBar />
+             <SelectTestLevelContainer>
+                <h1>Select Your Test Level</h1>
+                <SkillLevels basePath="tests" />
+             </SelectTestLevelContainer> 
         </SelectTestLevelWrapper>
     )
 }

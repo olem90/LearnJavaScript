@@ -1,12 +1,15 @@
-import { SelectTaskLevelWrapper } from "./SelectTaskLevel.styles";
+import { SelectTaskLevelWrapper, SelectTaskLevelContainer } from "./SelectTaskLevel.styles";
 import { SkillLevels } from "../SkillLevels/SkillLevels";
+import { NavBar } from "../Nav/Nav";
 
 export const SelectTaskLevel = () => {
     return (
         <SelectTaskLevelWrapper>
-            <hi>Select Your Task Level</hi>
-            <SkillLevels basePath="tasks" />
-
+            <NavBar />
+            <SelectTaskLevelContainer>
+                <h1>Select Your Task Level</h1>
+                <SkillLevels basePath="tasks" />
+            </SelectTaskLevelContainer>
         </SelectTaskLevelWrapper>
     )
 }
