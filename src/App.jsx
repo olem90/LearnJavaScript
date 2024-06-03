@@ -16,6 +16,8 @@ import { AdvancedQuizzes } from './components/AdvancedQuizzes/AdvancedQuizzes';
 import { SelectQuizLevel } from './components/SelectQuizLevel/SelectQuizLevel';
 import { SelectTaskLevel } from './components/SelectTaskLevel/SelectTaskLevel';
 import { SelectTestLevel } from './components/SelectTestLevel/SelectTestLevel';
+import { About } from './components/About/About';
+import { Resources } from './components/Resources/Resources';
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
         <Route path="/quizzes/beginner" element={<BeginnerQuizzes />} />
         <Route path="/quizzes/intermediate" element={<IntermediateQuizzes />} />
         <Route path="/quizzes/advanced" element={<AdvancedQuizzes />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/resources" element={<Resources />} />
       </Routes>      
     </Router>
   ) 

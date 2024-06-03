@@ -35,4 +35,4 @@ export const NavLinksContainer = styled.div`
     width: fit-content; 
     display: flex; 
     margin-left: 120px;
-`  
+`   
