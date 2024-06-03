@@ -1,11 +1,13 @@
-import { AdvancedTasksWrapper } from "./AdvancedTasks.styles";
+import { AdvancedTasksWrapper, AdvancedTasksContainer } from "./AdvancedTasks.styles";
 import { NavBar } from "../Nav/Nav";
 
 export const AdvancedTasks = () => {
     return (
         <AdvancedTasksWrapper>
             <NavBar />
-            <h1>Advanced Tasks</h1>
+            <AdvancedTasksContainer>
+                <h1>Advanced Tasks</h1>
+            </AdvancedTasksContainer>    
         </AdvancedTasksWrapper>
     )
 }

@@ -1,11 +1,13 @@
-import { BeginnerTasksWrapper } from "./BeginnerTasks.styles";
+import { BeginnerTasksWrapper, BeginnerTasksContainer } from "./BeginnerTasks.styles";
 import { NavBar } from "../Nav/Nav";
 
 export const BeginnerTasks = () => {
     return (
-        <BeginnerTasksWrapper>
+        <BeginnerTasksWrapper>         
             <NavBar />
-            <h1>Beginner Tasks</h1>
+            <BeginnerTasksContainer>
+                <h1>Beginner Tasks</h1>
+            </BeginnerTasksContainer>
         </BeginnerTasksWrapper>
     )
 }

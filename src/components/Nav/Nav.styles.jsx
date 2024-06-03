@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 export const NavStyles = styled.nav`
     box-sizing: border-box;
-    color: #fff;   
-    border: 1px solid gold;
+    color: #fff;
     display: flex;
     align-items: center;
     min-width: 100%;     
@@ -25,7 +24,7 @@ export const NavStyles = styled.nav`
     .intro {  
         color: #32CD32;
     } 
-
+ 
     .javascript-tasks {
         color: #9932CC; 
     }
@@ -35,6 +34,5 @@ export const NavLinksContainer = styled.div`
     box-sizing: border-box;
     width: fit-content; 
     display: flex; 
-    margin-left: 120px;   
-    border: 1px solid gold;
+    margin-left: 120px;
 `  
