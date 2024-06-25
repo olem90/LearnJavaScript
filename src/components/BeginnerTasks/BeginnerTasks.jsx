@@ -76,6 +76,7 @@ export const BeginnerTasks = () => {
                                 onChange={(newCode) => handleCodeChange(index, newCode)}
                                 fontSize={14}
                                 width="100%"
+                                height="200px"  
                                 setOptions={{ useWorker: false }} 
                             />   
                         </CodeEditorContainer>

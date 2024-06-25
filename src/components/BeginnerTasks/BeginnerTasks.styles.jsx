@@ -50,7 +50,7 @@ export const BeginnerTasksContainer = styled.div`
 
 export const CodeEditorContainer = styled.div`
     box-sizing: border-box; 
-    width: 100%;
+    width: 100%;  
     max-width: 1000px;
     margin: 0 auto;
 ` 
