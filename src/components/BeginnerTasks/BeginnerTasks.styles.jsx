@@ -65,15 +65,29 @@ export const BeginnerTasksButtonContainer = styled.div`
 
     .solutionBtn {
         box-sizing: border-box; 
+        background: #000;    
+        padding: 5px; 
+        margin-top: 10px;  
+        font-size: 14px;  
+        color: #FFD700;  
+        border: 2px solid #000;
         display: flex;
-        margin-left: auto;
-        padding: 5px;
-        border-radius: 2px;
-        margin-top: 10px;
-        height: 30px;
-        font-size: 16px;
-        align-items: center;
-        justify-content: center;
+        border-radius: 0;        
+        margin-left: auto;  
+        margin-right: 0;
+        cursor: pointer;
+        transition: all 0.3s ease; 
+        box-shadow: 0 0 2px 2px rgba(255, 215, 0, 0.5); 
+     
+    &:hover {
+        border-color: rgba(255, 215, 0, 0.5);  
+    }  
+
+    &:focus {
+        outline: 1px solid #6D4678;
+        border-color: rgba(50, 205, 50, 0.5);
+        box-shadow: 0 0 7px 2px rgba(50, 205, 50, 0.5);
+    }    
     }
 
     .runCodeBtn {   
@@ -81,8 +95,7 @@ export const BeginnerTasksButtonContainer = styled.div`
         background: #000;    
         padding: 5px; 
         margin-top: 10px;  
-        font-size: 15px; 
-        font-weight: bold;   
+        font-size: 14px;    
         color: #32CD32;  
         border: 2px solid #000;
         display: flex;
@@ -115,7 +128,8 @@ export const ConsoleOutputContainer = styled.div`
     max-width: 1000px;
     margin: 20px auto;
     display: flex; 
-    min-height: 66px;       
+    min-height: 66px;
+    border-radius: 2px;     
 
     h3 { 
         padding: 10px; 
@@ -138,10 +152,11 @@ export const ConsoleOutputContainer = styled.div`
 export const TaskSolutionContainer = styled.div`
     box-sizing: border-box; 
     background: #272822;  
-    border: 1px solid gold;
     max-width: 1000px;
     margin-inline: auto; 
     margin-bottom: 10px;
+    border-radius: 2px;   
+    box-shadow: 0 0 5px 2px rgba(255, 215, 0, 0.5);   
 `;
 
 export const TaskTitle = styled.span`
