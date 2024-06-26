@@ -35,15 +35,14 @@ export const BeginnerTasksContainer = styled.div`
         margin-inline: auto; 
     }
 
-    .task-solution {
-        background: #272822;  
-        border: 2px solid gold;
-    }
-
     p {
         color: #f8f8f2; 
         margin-inline: auto; 
         max-width: fit-content;  
+    }
+
+    .margin-top {
+        margin-top: 90px;
     }
 
 `     
@@ -82,7 +81,7 @@ export const BeginnerTasksButtonContainer = styled.div`
         background: #000;    
         padding: 5px; 
         margin-top: 10px;  
-        font-size: 16px; 
+        font-size: 15px; 
         font-weight: bold;   
         color: #32CD32;  
         border: 2px solid #000;
@@ -136,3 +135,16 @@ export const ConsoleOutputContainer = styled.div`
     }
 `;
 
+export const TaskSolutionContainer = styled.div`
+    box-sizing: border-box; 
+    background: #272822;  
+    border: 1px solid gold;
+    max-width: 1000px;
+    margin-inline: auto; 
+    margin-bottom: 10px;
+`;
+
+export const TaskTitle = styled.span`
+    font-weight: bold;
+    font-size: 18px;
+`;
