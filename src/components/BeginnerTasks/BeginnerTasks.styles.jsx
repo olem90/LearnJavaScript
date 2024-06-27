@@ -45,7 +45,33 @@ export const BeginnerTasksContainer = styled.div`
         margin-top: 90px;
     }
 
-`     
+    .clearConsoleBtn {
+        box-sizing: border-box; 
+        background: #000;    
+        padding: 5px; 
+        margin-top: 10px;  
+        font-size: 14px;    
+        color: #F0EAD6;   
+        border: 2px solid #000;
+        display: flex; 
+        border-radius: 0;        
+        margin-left: 0;  
+        margin-right: auto;
+        cursor: pointer;
+        transition: all 0.3s ease; 
+        box-shadow: 0 0 4px 2px rgba(245, 245, 245, 0.5); 
+
+        &:hover { 
+            border-color: rgba(245, 245, 245, 0.5);    
+        }  
+    
+        &:focus {
+            outline: 1px solid #F0EAD6; 
+            border-color: rgba(245, 245, 245, 0.5);
+            box-shadow: 0 0 7px 2px rgba(245, 245, 245, 0.5);   
+        }
+    }
+`; 
 
 export const CodeEditorContainer = styled.div`
     box-sizing: border-box; 
@@ -80,18 +106,18 @@ export const BeginnerTasksButtonContainer = styled.div`
         box-shadow: 0 0 2px 2px rgba(255, 215, 0, 0.5); 
      
     &:hover {
-        border-color: rgba(255, 215, 0, 0.5);  
-    }  
+        border-color: rgba(255, 215, 0, 0.5);   
+    }   
 
     &:focus {
-        outline: 1px solid #6D4678;
-        border-color: rgba(50, 205, 50, 0.5);
-        box-shadow: 0 0 7px 2px rgba(50, 205, 50, 0.5);
+        outline: 1px solid #FFC107;   
+        border-color: rgba(255, 215, 0, 0.5); 
+        box-shadow: 0 0 7px 2px rgba(50, 205, 50, 0.5);   
     }    
     }
 
     .runCodeBtn {   
-        box-sizing: border-box; 
+        box-sizing: border-box;  
         background: #000;    
         padding: 5px; 
         margin-top: 10px;  
@@ -101,7 +127,7 @@ export const BeginnerTasksButtonContainer = styled.div`
         display: flex;
         border-radius: 0;        
         margin-left: 0;  
-        margin-right: auto;
+        margin-right: 15px;
         cursor: pointer;
         transition: all 0.3s ease; 
         box-shadow: 0 0 4px 2px rgba(50, 205, 50, 0.5);  
@@ -117,6 +143,13 @@ export const BeginnerTasksButtonContainer = styled.div`
     }    
     }
 ` 
+
+export const ClearConsoleBtnContainer = styled.div`
+    box-sizing: border-box;
+    max-width: 1000px;
+    margin-inline: auto; 
+    margin-bottom: 15px; 
+`
 
 export const ConsoleOutputContainer = styled.div`
     box-sizing: border-box;
@@ -150,16 +183,22 @@ export const ConsoleOutputContainer = styled.div`
 `;
 
 export const TaskSolutionContainer = styled.div`
-    box-sizing: border-box; 
+    box-sizing: border-box;  
     background: #272822;  
     max-width: 1000px;
     margin-inline: auto; 
-    margin-bottom: 10px;
+    margin-bottom: 10px;  
     border-radius: 2px;   
-    box-shadow: 0 0 5px 2px rgba(255, 215, 0, 0.5);   
+    box-shadow: 0 0 5px 2px rgba(255, 215, 0, 0.5);    
 `;
 
 export const TaskTitle = styled.span`
     font-weight: bold;
     font-size: 18px;
+`;
+
+export const SolutionWrapper = styled.div`
+    box-sizing: border-box;    
+    padding: 10px; 
+    width: 100%;   
 `;
