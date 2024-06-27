@@ -332,9 +332,59 @@ if (temperature > 30) {
     },
 
     {
+        title: "Using Conditionals",
+        description: "Let's practice using conditionals to determine if a number is even or odd.",
+        task: `Task 17: 
+
+            1. Declare a function named \`checkEvenOdd\` that takes one parameter: \`number\`.
+            2. Inside the function, use an \`if-else\` statement to check if the number is even or odd.
+            3. Print "The number is even" if the number is even, and "The number is odd" if the number is odd.
+            4. Call the \`checkEvenOdd\` function with a number of your choice.`,
+        starterCode: ``, 
+        solution: `Solution:
+        
+function checkEvenOdd(number) {
+if (number % 2 === 0) {
+console.log("The number is even");
+}   else {
+        console.log("The number is odd");
+    }
+}
+
+checkEvenOdd(7); // Replace with your number`,
+        consoleOutput: `The number is odd`
+    },
+
+    {
+        title: "Using Conditionals",
+        description: "Let's practice using conditionals to find the largest of three numbers.",
+        task: `Task 18: 
+
+            1. Declare a function named \`findLargest\` that takes three parameters: \`num1\`, \`num2\`, and \`num3\`.
+            2. Inside the function, use an \`if-else\` statement to determine which number is the largest.
+            3. Print the largest number to the console.
+            4. Call the \`findLargest\` function with three numbers of your choice.`,
+        starterCode: ``, 
+        solution: `Solution:
+        
+function findLargest(num1, num2, num3) {
+if (num1 >= num2 && num1 >= num3) {
+    console.log("The largest number is: " + num1);
+} else if (num2 >= num1 && num2 >= num3) {
+    console.log("The largest number is: " + num2);
+} else {
+    console.log("The largest number is: " + num3);
+}
+}
+
+findLargest(10, 5, 8); // Replace with your numbers`,
+        consoleOutput: `The largest number is: 10`
+    },
+
+    {
         title: "Looping with While Loop",
         description: "Loops allow you to repeat a block of code multiple times. The \`while\` loop repeats as long as a specified condition is true.",
-        task: `Task 17: 
+        task: `Task 19: 
 
             1. Declare a variable named \`count\` and set it to 0.
             2. Use a \`while\` loop to print the numbers from 0 to 4. Increment \`count\` by 1 in each iteration.`,
@@ -361,7 +411,7 @@ export const BeginnerTasks = () => {
 
     const toggleSolution = (index) => { 
         const updatedShowSolution = [...showSolution];
-        updatedShowSolution[index] = !updatedShowSolution[index];
+        updatedShowSolution[index] = !updatedShowSolution[index]; 
         setShowSolution(updatedShowSolution);
 
         if (!showSolution[index]) {
