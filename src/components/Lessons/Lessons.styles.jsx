@@ -1,25 +1,36 @@
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 export const LessonsWrapper = styled.div`
     box-sizing: border-box;
     min-height: 100vh;
-    min-width: 100%; 
-    border: 1px solid transparent; 
-    background-color: #FAFAFA;   
+    min-width: 100%;
+    border: 1px solid transparent;
+    background-color: #FAFAFA;
+    
+    .lessons_h3-container {
+        max-width: 100%;
+        margin-inline: auto;
+        margin-top: 50px;    
+        display: flex;
+        max-height: 200px; 
+    }  
 
     h1 {
-        color: #333;
-        margin-inline: auto;
-        padding: 8px; 
-        width: fit-content; 
-        margin-top: 80px;
-    }
-`;
+        color: #333; 
+        display: flex;
+        margin-inline: auto;  
+        padding: 10px;
+        background-color: #f4f4f4;  
+        width: 85%;     
+        text-align: center;  
+    }    
+`;   
 
-export const LessonsContainer = styled.div`   
+export const LessonsContainer = styled.div`    
     display: flex; 
-    flex-direction: row;    
-    max-width: 86%;   
+    flex-direction: row; 
+    max-width: 86%;
     margin-inline: auto; 
 `
 
@@ -73,5 +84,48 @@ export const Content = styled.div`
 export const ContentContainer = styled.div`
     max-width: 800px; 
     margin-inline: auto;  
-` 
-   
+`;
+
+export const Dropdown = styled.div`
+    cursor: pointer;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+
+    &:hover {
+        background-color: #ddd;
+    }
+
+    &.active {
+        font-weight: bold;
+    }
+`;
+
+export const DropdownContent = styled.div`
+    padding-left: 20px;
+
+    button {
+        display: block;
+        background: none;
+        border: none;
+        color: #333;
+        text-align: left;
+        padding: 5px 0;
+        cursor: pointer;
+        width: 100%;
+    }
+`;
+
+export const StyledNavLink = styled(NavLink)`
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 0;
+
+    &.active {
+        font-weight: bold;
+    }
+
+    &:hover {
+        background-color: #ddd;
+    }
+`;
