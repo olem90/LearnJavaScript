@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 export const LessonsWrapper = styled.div`
     box-sizing: border-box;
@@ -103,7 +103,7 @@ export const Dropdown = styled.div`
 export const DropdownContent = styled.div`
     padding-left: 20px;
 
-    button {
+    a {
         display: block;
         background: none;
         border: none;
@@ -112,6 +112,11 @@ export const DropdownContent = styled.div`
         padding: 5px 0;
         cursor: pointer;
         width: 100%;
+
+        &.activeLink {
+            color: red;
+            text-decoration: underline;
+        }
     }
 `;
 
@@ -120,9 +125,28 @@ export const StyledNavLink = styled(NavLink)`
     color: #333;
     text-decoration: none;
     padding: 10px 0;
+    font-size: 16px;   
+
+    &.activeLink {
+        color: red;
+        text-decoration: underline;
+    }
+
+    &:hover {
+        background-color: #ddd;  
+    }
+`;
+
+export const StyledLink = styled(Link)`
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 16px; 
+    font-weight: normal;      
 
     &.active {
-        font-weight: bold;
+        font-weight: bold; 
     }
 
     &:hover {
