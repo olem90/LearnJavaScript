@@ -9,6 +9,7 @@ export const Lessons = () => {
 
     const toggleDropdown = (dropdown) => {
         setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
+        setActiveLink(""); 
     };
 
     const handleLinkClick = (link) => {

@@ -112,28 +112,23 @@ export const DropdownContent = styled.div`
         padding: 5px 0;
         cursor: pointer;
         width: 100%;
-
-        &.activeLink {
-            color: red;
-            text-decoration: underline;
-        }
     }
-`;
+`; 
 
 export const StyledNavLink = styled(NavLink)`
     display: block;
     color: #333;
     text-decoration: none;
-    padding: 10px 0;
+    padding: 10px 0; 
     font-size: 16px;   
 
     &.activeLink {
-        color: red;
-        text-decoration: underline;
+        color: red; 
     }
 
     &:hover {
-        background-color: #ddd;  
+        background: blue;    
+        text-decoration: underline;  
     }
 `;
 
