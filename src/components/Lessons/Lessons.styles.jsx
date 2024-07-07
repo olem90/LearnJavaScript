@@ -69,9 +69,9 @@ export const Content = styled.div`
 
     code {
         background-color: #eee; 
-        padding: 2px 4px;
-    }
-
+        padding: 2px 4px; 
+    } 
+ 
     pre {
         background-color: #eee;
         padding: 10px;
@@ -128,7 +128,7 @@ export const StyledNavLink = styled(NavLink)`
 
     &:hover {
         background: blue;    
-        text-decoration: underline;  
+        text-decoration: underline;   
     }
 `;
 
@@ -136,15 +136,25 @@ export const StyledLink = styled(Link)`
     display: block;
     color: #333;
     text-decoration: none;
-    padding: 10px 0;
+    padding: 10px 0; 
     font-size: 16px; 
     font-weight: normal;      
 
-    &.active {
+    &.activeLink {
         font-weight: bold; 
     }
-
+ 
     &:hover {
         background-color: #ddd;
     }
 `;
+
+export const PaginationContainer = styled.div`
+    border: 2px solid gold;
+    width: 100%;
+
+`
+
+export const PaginationButton = styled.button`
+    border: 2px solid #000; 
+`
