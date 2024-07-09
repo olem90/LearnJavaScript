@@ -25,6 +25,10 @@ import { ControlStructures } from './components/Lessons/ControlStructures';
 import { Loops } from './components/Lessons/Loops';
 import { Functions } from './components/Lessons/Functions';
 import { Objects } from './components/Lessons/Objects';
+import { Arrays } from './components/Lessons/Arrays';
+import { Events } from './components/Lessons/Events';
+import { DomManipulation } from './components/Lessons/DomManipulation';
+import { AsyncJavaScript } from './components/Lessons/AsyncJavaScript ';
 
 function App() {
 
@@ -32,7 +36,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/lessons" element={<Lessons />}>
+        <Route path="/lessons" element={<Lessons />}> 
           <Route index element={<Navigate to="introduction" replace />} /> 
           <Route path="introduction" element={<Introduction />} />
           <Route path="setup" element={<Setup />} />
@@ -41,7 +45,11 @@ function App() {
           <Route path="controlStructures" element={<ControlStructures />} /> 
           <Route path="loops" element={<Loops />} /> 
           <Route path="functions" element={<Functions />} /> 
-          <Route path="objects" element={<Objects />} /> 
+          <Route path="objects" element={<Objects />} />  
+          <Route path="arrays" element={<Arrays />} /> 
+          <Route path="events" element={<Events />} /> 
+          <Route path="domManipulation" element={<DomManipulation />} /> 
+          <Route path="asyncJavaScript" element={<AsyncJavaScript />} /> 
         </Route> 
         <Route path="/tasks" element={<SelectTaskLevel />} />  
         <Route path="/tasks/beginner" element={<BeginnerTasks />} /> 

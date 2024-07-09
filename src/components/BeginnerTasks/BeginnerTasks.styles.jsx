@@ -20,7 +20,9 @@ export const BeginnerTasksContainer = styled.div`
         margin-top: 20px;
         color: #F5F5F5; 
         margin-inline: auto;
+        max-width: -moz-fit-content; 
         max-width: fit-content; 
+          
     }
 
     pre {

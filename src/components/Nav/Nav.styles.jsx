@@ -32,7 +32,8 @@ export const NavStyles = styled.nav`
 
 export const NavLinksContainer = styled.div` 
     box-sizing: border-box;
-    width: fit-content; 
+    width: -moz-fit-content;
+    width: fit-content;
     display: flex; 
     margin-left: 120px;
-`   
+`     
