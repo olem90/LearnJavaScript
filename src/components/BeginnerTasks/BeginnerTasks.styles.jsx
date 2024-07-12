@@ -13,7 +13,8 @@ export const BeginnerTasksContainer = styled.div`
     h1 {
         text-align: center;
         color: #F5F5F5;
-        padding-block: 70px 30px;  
+        padding-block: 70px 30px;
+        font-size: 36px; 
     }
  
     h2 {
@@ -21,8 +22,10 @@ export const BeginnerTasksContainer = styled.div`
         color: #F5F5F5; 
         margin-inline: auto;
         max-width: -moz-fit-content; 
-        max-width: fit-content; 
-          
+        max-width: fit-content;
+        padding: 10px;
+        text-align: center; 
+        font-size: 28px;   
     }
 
     pre {
@@ -73,8 +76,45 @@ export const BeginnerTasksContainer = styled.div`
             box-shadow: 0 0 7px 2px rgba(245, 245, 245, 0.5);   
         }
     }
-`; 
 
+    .taskTitle {
+        padding: 15px;
+    }
+    
+    .taskDescription {
+        
+        @media(max-width: 520px) {
+            text-align: center; 
+        }
+    }
+
+    @media(max-width: 1100px)  {
+        max-width: 90%;    
+        margin-inline: auto; 
+    }
+
+    @media(max-width: 900px)  {
+         
+        margin-inline: auto;  
+
+        pre, code {
+            white-space: pre-wrap; 
+            word-wrap: break-word;
+        }
+    }
+
+    @media(max-width: 650px)  {
+
+        h1 {
+            font-size: 32px;  
+        }
+
+        h2 { 
+            font-size: 22px;      
+        }
+    } 
+`;
+ 
 export const CodeEditorContainer = styled.div`
     box-sizing: border-box; 
     width: 100%;  
@@ -158,7 +198,6 @@ export const ConsoleOutputContainer = styled.div`
     background-color: #333;
     color: #F5F5F5;
     padding: 0;
-    border-radius: 4px;
     width: 100%;
     max-width: 1000px;
     margin: 20px auto;
@@ -196,7 +235,7 @@ export const TaskSolutionContainer = styled.div`
 
 export const TaskTitle = styled.span`
     font-weight: bold;
-    font-size: 18px;
+    font-size: 18px; 
 `;
 
 export const SolutionWrapper = styled.div`

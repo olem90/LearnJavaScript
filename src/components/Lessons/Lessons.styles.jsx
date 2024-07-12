@@ -11,36 +11,45 @@ export const LessonsWrapper = styled.div`
     .lessons_h3-container {
         max-width: 100%;
         margin-inline: auto;
-        margin-top: 50px;    
+        margin-top: 50px;
         display: flex;
-        max-height: 200px; 
-    }  
+        max-height: 200px;
+    }
 
     h1 {
-        color: #333; 
+        color: #333;
         display: flex;
-        margin-inline: auto;  
+        margin-inline: auto;
         padding: 10px;
-        background-color: #f4f4f4;  
-        width: 85%;     
-        text-align: center;  
-    }    
+        background-color: #f4f4f4;
+        width: 85%;
+        text-align: center;
+
+        @media(max-width: 1200px) {
+            width: 92%;
+        }
+    }
 `;   
 
 export const LessonsContainer = styled.div`    
     display: flex; 
     flex-direction: row; 
     max-width: 86%;
-    margin-inline: auto; 
+    margin-inline: auto;
+
+    @media(max-width: 1200px) {
+        max-width: 94%;  
+    }
 `
 
 export const Sidebar = styled.div`
-    flex: 1;  
+    flex: 1.1; 
     background-color: #f4f4f4; 
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
     height: 100%;
     overflow-y: auto;
+    min-width: 230px;      
  
     h2 {
         color: #333;
@@ -61,7 +70,7 @@ export const Sidebar = styled.div`
 export const Content = styled.div`
     margin-left: 10px;
     padding: 20px; 
-    flex: 4;   
+    flex: 4;
 
     h2 {
         color: #333;    
@@ -85,35 +94,6 @@ export const ContentContainer = styled.div`
     max-width: 800px; 
     margin-inline: auto;  
 `;
-
-export const Dropdown = styled.div`
-    cursor: pointer;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
-
-    &:hover {
-        background-color: #ddd;
-    }
-
-    &.active {
-        font-weight: bold;
-    }
-`;
-
-export const DropdownContent = styled.div`
-    padding-left: 20px;
-
-    a {
-        display: block;
-        background: none;
-        border: none;
-        color: #333;
-        text-align: left;
-        padding: 5px 0;
-        cursor: pointer;
-        width: 100%;
-    }
-`; 
 
 export const StyledNavLink = styled(NavLink)`
     display: block;

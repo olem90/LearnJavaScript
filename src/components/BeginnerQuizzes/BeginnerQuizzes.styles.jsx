@@ -65,24 +65,41 @@ export const BeginnerQuizzesContainer = styled.div`
         margin-right: 10px;
     } 
  
-    button {
+    .submitBtn {
         padding: 10px 20px;
         font-size: 16px;
         color: #fff;
-        background-color: #007bff;
+        background-color: #B5651D; 
         border: none;
         border-radius: 5px;
         cursor: pointer;
+        margin-right: auto; 
 
         &:disabled {
             background-color: #ccc; 
         } 
     }
 
+    .btnContainer {
+        box-sizing: border-box;
+        display: flex;
+        margin-top: 20px;  
+    }
+ 
+    .resetBtn { 
+        padding: 10px 20px;  
+        border: none;  
+        border-radius: 5px;  
+        margin-left: auto; 
+        margin-right: 0;
+        color: #fff; 
+        background-color: #A52A2A;    
+    }  
+
     .score-section {
         font-size: 24px;
         font-weight: bold;
-    }  
+    }    
 `; 
 
 export const QuizContentContainer = styled.div`

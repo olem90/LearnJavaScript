@@ -8,7 +8,7 @@ export const BeginnerQuizzes = () => {
     const [showScore, setShowScore] = useState(false);
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [clearCheckedBox, setClearCheckedBox] = useState(false);
-
+    const [resetQuiz, setResetQuiz] = useState(false);
 
     const questions = [ 
         {  
@@ -131,22 +131,31 @@ export const BeginnerQuizzes = () => {
             localStorage.removeItem('quizState');
             console.log('Cleared quiz state from localStorage');
         }
-    }, [showScore]); 
+    }, [showScore]);
+
+    const handleResetClick = () => {
+        setCurrentQuestion(0);
+        setScore(0);
+        setShowScore(false);
+        setSelectedAnswer(null);
+        setClearCheckedBox(!clearCheckedBox);
+        localStorage.removeItem('quizState'); 
+    };
 
     const handleAnswerOptionClick = () => { 
         if (selectedAnswer && selectedAnswer.isCorrect) {
             setScore(score + 1); 
         } 
 
-        const nextQuestion = currentQuestion + 1;
+    const nextQuestion = currentQuestion + 1;
         if (nextQuestion < questions.length) {
-            setCurrentQuestion(nextQuestion);
+            setCurrentQuestion(nextQuestion); 
             setSelectedAnswer(null);
             setClearCheckedBox(!clearCheckedBox);
         } else {
             setShowScore(true);
         }
-    };
+    }; 
 
     return (
         <BeginnerQuizzesWrapper>
@@ -188,12 +197,18 @@ export const BeginnerQuizzes = () => {
                                     </label> 
                                 ))} 
                             </div> 
-                            <button onClick={handleAnswerOptionClick} disabled={!selectedAnswer}>
-                                Submit
-                            </button>
+                            <div className="btnContainer">
+                                <button className="submitBtn" onClick={handleAnswerOptionClick} disabled={!selectedAnswer}>
+                                    Submit
+                                </button>
+                                <button className="resetBtn" onClick={handleResetClick}>
+                                    Reset
+                                </button>
+                            </div>
+                            
                         </>
-                    )}
-                </QuizContentContainer>
+                    )} 
+                </QuizContentContainer>   
             </BeginnerQuizzesContainer>
         </BeginnerQuizzesWrapper>
     );

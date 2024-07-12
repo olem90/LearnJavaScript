@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState } from 'react';
 import { useNavigate, Outlet } from 'react-router-dom';
 import { LessonsWrapper, LessonsContainer, ContentContainer, Sidebar, Content, StyledLink, PaginationButton, PaginationContainer } from "./Lessons.styles";
 import { NavBar } from "../Nav/Nav";

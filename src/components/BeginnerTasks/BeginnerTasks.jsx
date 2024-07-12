@@ -11,29 +11,31 @@ const tasks = [
     {
         title: "Introducing Yourself with JavaScript Variables", 
         description: "Let's start by creating some simple variables to introduce yourself!", 
-        task: ` Task 1: 
+        task: `Task 1: 
 
-            1. Declare a variable named \`myName\` and set it to your name. 
-            2. Declare another variable named \`myAge\` and set it to your age.
-            3. Print both variables to the console with messages that introduce yourself.`,
+
+1. Declare a variable named \`myName\` and set it to your name. 
+2. Declare another variable named \`myAge\` and set it to your age.
+3. Print both variables to the console with messages that introduce yourself.`, 
         starterCode: ``,  
         solution: `Solution:
         
 let myName = "John Doe"; // Replace with your name 
 let myAge = 25; // Replace with your age 
   
-console.log("My name is " + myName);   
+console.log("My name is " + myName);    
 console.log("I am " + myAge + " years old");`,
         consoleOutput: `My name is John Doe I am 25 years old`
     },  
-
+    
     {
         title: "Adding Hobbies to Your Introduction",
         description: "Let's add more details to your introduction by including your hobbies!",
-        task: ` Task 2: 
+        task: `Task 2:
 
-            1. Declare a variable named \`myHobbies\` and set it to a list of your hobbies (as a string).
-            2. Print the variable to the console with a message that includes your hobbies.`,
+
+1. Declare a variable named \`myHobbies\` and set it to a list of your hobbies (as a string).
+2. Print the variable to the console with a message that includes your hobbies.`,
         starterCode: ``, 
         solution: `Solution:
 
@@ -45,11 +47,12 @@ console.log("My hobbies are: " + myHobbies);`,
     {
         title: "Combining Personal Details",
         description: "Let's combine everything we've learned so far into one cohesive introduction!",
-        task: ` Task 3: 
+        task: `Task 3:
 
-            1. Declare variables named \`myName\`, \`myAge\`, and \`myHobbies\`, and assign them appropriate values.
-            2. Combine these variables into a single message that introduces yourself.
-            3. Print the complete introduction message to the console.`,
+
+1. Declare variables named \`myName\`, \`myAge\`, and \`myHobbies\`, and assign them appropriate values.
+2. Combine these variables into a single message that introduces yourself.
+3. Print the complete introduction message to the console.`,
         starterCode: ``, 
         solution: `Solution:
         
@@ -61,15 +64,16 @@ let introduction = "Hello! My name is " + myName + ", I am " + myAge + " years o
 console.log(introduction);`,
         consoleOutput: `Hello! My name is Ole, I am 34 years old, and my hobbies are playing poker, working out, and coding.`
     },
-
+ 
     {
         title: "Playing with Numbers: Basic Math Operations",
         description: "Let's practice some basic math operations with JavaScript variables!",
-        task: ` Task 4: 
+        task: `Task 4:
 
-            1. Declare two variables named \`num1\` and \`num2\` and assign them any numbers you like.
-            2. Create variables to store the results of adding, subtracting, multiplying, and dividing these two numbers.
-            3. Print all the results to the console to see the magic of JavaScript math!`,
+
+1. Declare two variables named \`num1\` and \`num2\` and assign them any numbers you like.
+2. Create variables to store the results of adding, subtracting, multiplying, and dividing these two numbers.
+3. Print all the results to the console to see the magic of JavaScript math!`,
         starterCode: ``,  
         solution: `Solution:
 
@@ -91,11 +95,12 @@ console.log("divided: " + divided + ", ");`,
     {
         title: "Calculating the Area of a Rectangle",
         description: "Let's learn how to calculate the area of a rectangle by multiplying its length and width.",
-        task: ` Task 5: 
+        task: `Task 5:
+
     
-            1. Declare two variables named \`length\` and \`width\`, and assign them any values.
-            2. Calculate the area by multiplying \`length\` and \`width\`, and store the result in a variable named \`area\`.
-            3. Print the value of \`area\` to the console.`,
+1. Declare two variables named \`length\` and \`width\`, and assign them any values.
+2. Calculate the area by multiplying \`length\` and \`width\`, and store the result in a variable named \`area\`.
+3. Print the value of \`area\` to the console.`,
         starterCode: ``, 
         solution: `Solution:
 const length = 5; // Replace with any length
@@ -110,11 +115,12 @@ console.log("The area of the rectangle is " + area);`,
     {
         title: "Calculating the Perimeter of a Rectangle",
         description: "Let's learn how to calculate the perimeter of a rectangle by adding its length and width twice.",
-        task: ` Task 6: 
+        task: `Task 6:
+
     
-            1. Declare two variables named \`length\` and \`width\`, and assign them any values.
-            2. Calculate the perimeter by adding \`length\` and \`width\` twice, and store the result in a variable named \`perimeter\`.
-            3. Print the value of \`perimeter\` to the console.`,
+1. Declare two variables named \`length\` and \`width\`, and assign them any values.
+2. Calculate the perimeter by adding \`length\` and \`width\` twice, and store the result in a variable named \`perimeter\`.
+3. Print the value of \`perimeter\` to the console.`,
         starterCode: ``, 
         solution: `Solution:
 const length = 5; // Replace with any length
@@ -129,12 +135,13 @@ console.log("The perimeter of the rectangle is " + perimeter);`,
     {
         title: "Working with Strings",
         description: "Let's practice working with strings by creating a simple greeting message!",
-        task: ` Task 7:
+        task: `Task 7:
 
-            1. Create a variable named \`greeting\` and assign it a string value of "Hello".
-            2. Add another string variable named \`name\` and set it to your name.
-            3. Concatenate these two strings to form a message and store it in a new variable named \`message\`.
-            4. Print the \`message\` variable to the console.`,
+
+1. Create a variable named \`greeting\` and assign it a string value of "Hello".
+2. Add another string variable named \`name\` and set it to your name.
+3. Concatenate these two strings to form a message and store it in a new variable named \`message\`.
+4. Print the \`message\` variable to the console.`,
         starterCode: ` `, 
         solution: `Solution:
  
@@ -150,14 +157,15 @@ console.log(message);`,
     {
         title: "Changing String Case",
         description: "Let's practice changing the case of a string using JavaScript string methods.",
-        task: ` Task 8: 
+        task: `Task 8:
 
-            1. Create a variable named \`originalString\` and assign it a value of "JavaScript is Fun".
-            2. Use the \`toUpperCase\` method to convert the string to uppercase and store the result 
-            in a variable named \`upperCaseString\`. 
-            3. Use the \`toLowerCase\` method to convert the string to lowercase and store the result 
-            in a variable named \`lowerCaseString\`.
-            4. Print both \`upperCaseString\` and \`lowerCaseString\` to the console.`,
+
+1. Create a variable named \`originalString\` and assign it a value of "JavaScript is Fun".
+2. Use the \`toUpperCase\` method to convert the string to uppercase and store the result 
+in a variable named \`upperCaseString\`. 
+3. Use the \`toLowerCase\` method to convert the string to lowercase and store the result 
+in a variable named \`lowerCaseString\`.
+4. Print both \`upperCaseString\` and \`lowerCaseString\` to the console.`,
         starterCode: ``, 
         solution: `Solution:
 
@@ -175,11 +183,12 @@ console.log(lowerCaseString);`,
     {
         title: "Finding the Length of a String",
         description: "Let's practice finding the length of a string using the length property.",
-        task: ` Task 9: 
+        task: `Task 9:
 
-            1. Create a variable named \`myString\` and assign it a value of "Learning JavaScript".
-            2. Use the \`length\` property to find the length of the string and store the result in a variable named \`stringLength\`.
-            3. Print the \`stringLength\` variable to the console.`,
+
+1. Create a variable named \`myString\` and assign it a value of "Learning JavaScript".
+2. Use the \`length\` property to find the length of the string and store the result in a variable named \`stringLength\`.
+3. Print the \`stringLength\` variable to the console.`,
         starterCode: ``, 
         solution: `Solution:
 
@@ -194,10 +203,11 @@ console.log(stringLength);`,
     {
         title: "Arrays and Looping Through Them",
         description: "Let's learn how to create an array and loop through its elements to print each one. This is fundamental in handling lists of data in JavaScript.",
-        task: `Task 10: 
+        task: `Task 10:
 
-            1. Declare an array named \`colors\` and initialize it with three color names (e.g., \`"red"\`, \`"green"\`, \`"blue"\`).
-            2. Use a \`for\` loop to print each color in the array to the console.`,
+
+1. Declare an array named \`colors\` and initialize it with three color names (e.g., \`"red"\`, \`"green"\`, \`"blue"\`).
+2. Use a \`for\` loop to print each color in the array to the console.`,
         starterCode: ``, 
         solution: `Solution:
 
@@ -212,11 +222,12 @@ for (let i = 0; i < colors.length; i++) {
     {
         title: "Arrays and Looping Through Them",
         description: "Let's learn how to create an array and loop through its elements to print each one. This is fundamental in handling lists of data in JavaScript.",
-        task: `Task 11: 
+        task: `Task 11:
 
-            1. Create an empty array named \`fruits\`.
-            2. Use the \`push\` method to add three different fruit names to the array.
-            3. Print the \`fruits\` array to the console.`,
+
+1. Create an empty array named \`fruits\`.
+2. Use the \`push\` method to add three different fruit names to the array.
+3. Print the \`fruits\` array to the console.`,
         starterCode: ``, 
         solution: `Solution:
         
@@ -233,10 +244,11 @@ console.log(fruits);`,
     {
         title: "Looping Through an Array with forEach",
         description: "Let's practice looping through an array using the forEach method.",
-        task: `Task 12: 
+        task: `Task 12:
 
-            1. Create an array named \`colors\` and initialize it with three color names.
-            2. Use the \`forEach\` method to print each color in the array to the console.`,
+
+1. Create an array named \`colors\` and initialize it with three color names.
+2. Use the \`forEach\` method to print each color in the array to the console.`,
         starterCode: ``, 
         solution: `Solution:
         
@@ -251,11 +263,12 @@ console.log(color);
     {
         title: "Working with Functions",
         description: "Functions allow you to encapsulate code that performs a specific task. They can be reused multiple times throughout your code.",
-        task: `Task 13: 
+        task: `Task 13:
 
-            1. Declare a function named \`greet\` that takes one parameter named \`name\`.
-            2. Inside the function, print a greeting message that includes the provided \`name\`.
-            3. Call the \`greet\` function and pass your name as an argument.`,
+
+1. Declare a function named \`greet\` that takes one parameter named \`name\`.
+2. Inside the function, print a greeting message that includes the provided \`name\`.
+3. Call the \`greet\` function and pass your name as an argument.`,
         starterCode: ``, 
         solution: `Solution:
 
@@ -270,12 +283,13 @@ greet("John");`,
     {
         title: "Function to Add Two Numbers",
         description: "Let's practice creating a function that performs a specific task. In this case, we'll create a function that adds two numbers.",
-        task: `Task 14: 
+        task: `Task 14:
 
-            1. Declare a function named \`addNumbers\` that takes two parameters: \`num1\` and \`num2\`.
-            2. Inside the function, add \`num1\` and \`num2\` and store the result in a variable named \`sum\`.
-            3. Print the \`sum\` variable to the console.
-            4. Call the \`addNumbers\` function with two numbers of your choice.`,
+
+1. Declare a function named \`addNumbers\` that takes two parameters: \`num1\` and \`num2\`.
+2.
+3. Print the \`sum\` variable to the console.
+4. Call the \`addNumbers\` function with two numbers of your choice.`,
         starterCode: ``, 
         solution: `Solution:
         
@@ -291,13 +305,14 @@ addNumbers(5, 3); // Replace with your numbers`,
     {
         title: "Function to Calculate the Area of a Circle",
         description: "Let's practice creating a function that calculates the area of a circle given its radius.",
-        task: `Task 15: 
+        task: `Task 15:
 
-            1. Declare a function named \`calculateArea\` that takes one parameter: \`radius\`.
-            2. Inside the function, calculate the area using the formula \`area = Math.PI * radius * radius\` 
-            and store the result in a variable named \`area\`.
-            3. Print the \`area\` variable to the console.
-            4. Call the \`calculateArea\` function with a radius of your choice.`,
+
+1. Declare a function named \`calculateArea\` that takes one parameter: \`radius\`.
+2. Inside the function, calculate the area using the formula \`area = Math.PI * radius * radius\` 
+and store the result in a variable named \`area\`.
+3. Print the \`area\` variable to the console.
+4. Call the \`calculateArea\` function with a radius of your choice.`,
         starterCode: ``, 
         solution: `Solution:
         
@@ -313,11 +328,12 @@ calculateArea(4); // Replace with your radius`,
     {
         title: "Using Conditionals",
         description: "Conditionals allow you to execute different code based on certain conditions. This is essential for making decisions in your code.",
-        task: `Task 16: 
+        task: `Task 16:
 
-            1. Declare a variable named \`temperature\` and assign it a value.
-            2. Use an \`if-else\` statement to print "It's hot!" if the temperature is above 30, 
-            and "It's cold!" if the temperature is 30 or below.`,
+
+1. Declare a variable named \`temperature\` and assign it a value.
+2. Use an \`if-else\` statement to print "It's hot!" if the temperature is above 30, 
+and "It's cold!" if the temperature is 30 or below.`,
         starterCode: ``, 
         solution: `Solution:
         
@@ -334,12 +350,13 @@ if (temperature > 30) {
     {
         title: "Using Conditionals",
         description: "Let's practice using conditionals to determine if a number is even or odd.",
-        task: `Task 17: 
+        task: `Task 17:
 
-            1. Declare a function named \`checkEvenOdd\` that takes one parameter: \`number\`.
-            2. Inside the function, use an \`if-else\` statement to check if the number is even or odd.
-            3. Print "The number is even" if the number is even, and "The number is odd" if the number is odd.
-            4. Call the \`checkEvenOdd\` function with a number of your choice.`,
+
+1. Declare a function named \`checkEvenOdd\` that takes one parameter: \`number\`.
+2. Inside the function, use an \`if-else\` statement to check if the number is even or odd.
+3. Print "The number is even" if the number is even, and "The number is odd" if the number is odd.
+4. Call the \`checkEvenOdd\` function with a number of your choice.`,
         starterCode: ``, 
         solution: `Solution:
         
@@ -358,12 +375,13 @@ checkEvenOdd(7); // Replace with your number`,
     {
         title: "Using Conditionals",
         description: "Let's practice using conditionals to find the largest of three numbers.",
-        task: `Task 18: 
+        task: `Task 18:
 
-            1. Declare a function named \`findLargest\` that takes three parameters: \`num1\`, \`num2\`, and \`num3\`.
-            2. Inside the function, use an \`if-else\` statement to determine which number is the largest.
-            3. Print the largest number to the console.
-            4. Call the \`findLargest\` function with three numbers of your choice.`,
+
+1. Declare a function named \`findLargest\` that takes three parameters: \`num1\`, \`num2\`, and \`num3\`.
+2. Inside the function, use an \`if-else\` statement to determine which number is the largest.
+3. Print the largest number to the console.
+4. Call the \`findLargest\` function with three numbers of your choice.`,
         starterCode: ``, 
         solution: `Solution:
         
@@ -384,10 +402,11 @@ findLargest(10, 5, 8); // Replace with your numbers`,
     {
         title: "Looping with While Loop",
         description: "Loops allow you to repeat a block of code multiple times. The \`while\` loop repeats as long as a specified condition is true.",
-        task: `Task 19: 
+        task: `Task 19:
 
-            1. Declare a variable named \`count\` and set it to 0.
-            2. Use a \`while\` loop to print the numbers from 0 to 4. Increment \`count\` by 1 in each iteration.`,
+
+1. Declare a variable named \`count\` and set it to 0.
+2. Use a \`while\` loop to print the numbers from 0 to 4. Increment \`count\` by 1 in each iteration.`,
         starterCode: ``, 
         solution: `Solution:
         
@@ -420,7 +439,7 @@ export const BeginnerTasks = () => {
                     behavior: 'smooth',
                     block: 'end',
                 });
-            }, 100); // Delay to ensure the state update is complete
+            }, 100);
         }
     };
 
@@ -473,8 +492,8 @@ export const BeginnerTasks = () => {
                 {tasks.map((task, index) => (
                     <div key={index}>
                         <h2 className={index > 0 ? "margin-top" : ""}>{task.title}</h2>
-                        <p>{task.description}</p>
-                        <pre>
+                        <p className="taskDescription">{task.description}</p> 
+                        <pre className="taskTitle">
                             <TaskTitle>{task.task.split('\n')[0]}</TaskTitle>
                             {task.task.split('\n').slice(1).join('\n')}
                         </pre>
@@ -482,7 +501,7 @@ export const BeginnerTasks = () => {
                             <AceEditor
                                 mode="javascript" 
                                 theme="monokai"
-                                name={`editor_${index}`}
+                                name={`editor_${index}`}  
                                 value={code[index]}
                                 onChange={(newCode) => handleCodeChange(index, newCode)}
                                 fontSize={14} 
@@ -514,11 +533,8 @@ export const BeginnerTasks = () => {
                             </SolutionWrapper>
                         )} 
                     </div>
-                ))}  
- 
+                ))}
             </BeginnerTasksContainer>
-           
-            
         </BeginnerTasksWrapper>
     );
 }; 
