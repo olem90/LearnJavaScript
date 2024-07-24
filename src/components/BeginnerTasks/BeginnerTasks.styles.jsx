@@ -240,6 +240,5 @@ export const TaskTitle = styled.span`
 
 export const SolutionWrapper = styled.div`
     box-sizing: border-box;    
-    padding: 10px; 
-    width: 100%;   
-`;
+    width: 100%;
+`; 

@@ -40,6 +40,10 @@ export const LessonsContainer = styled.div`
     @media(max-width: 1200px) {
         max-width: 94%;  
     }
+
+    @media(max-width: 800px) {
+        flex-direction: column;  
+    }
 `
 
 export const Sidebar = styled.div`
@@ -85,9 +89,13 @@ export const Content = styled.div`
         background-color: #eee;
         padding: 10px;
         border-radius: 4px;
-        overflow-x: auto;
-        white-space: pre-wrap; /* This ensures the text wraps and doesn't overflow the container */
-    }
+        overflow-x: auto; 
+        white-space: pre-wrap; 
+
+        @media(max-width: 1100px) {
+            
+        } 
+    } 
 `;
 
 export const ContentContainer = styled.div`

@@ -465,7 +465,7 @@ export const BeginnerTasks = () => {
         });
     };
 
-    const handleRunCode = (index) => {
+    const handleRunCode = (index) => { 
         const userCode = code[index];
         const customConsole = {
             log: (message) => {
@@ -477,7 +477,6 @@ export const BeginnerTasks = () => {
             }
         };
         try {
-            // eslint-disable-next-line no-eval
             eval(userCode.replace(/console\.log/g, 'customConsole.log'));
         } catch (error) {
             customConsole.log(`Error: ${error.message}`); 
@@ -527,11 +526,11 @@ export const BeginnerTasks = () => {
                         {showSolution[index] && ( 
                             <SolutionWrapper ref={solutionRefs.current[index]}>
                                 <TaskSolutionContainer>
-                                <pre>{task.solution}</pre> 
-                                <pre>Expected Console Output: {task.consoleOutput}</pre>
-                            </TaskSolutionContainer>
+                                    <pre>{task.solution}</pre> 
+                                    <pre>Expected Console Output: {task.consoleOutput}</pre>
+                                </TaskSolutionContainer>
                             </SolutionWrapper>
-                        )} 
+                        )}  
                     </div>
                 ))}
             </BeginnerTasksContainer>
